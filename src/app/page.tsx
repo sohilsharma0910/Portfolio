@@ -181,14 +181,14 @@ export default function Page() {
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  <HackathonCard
+                  {/* <HackathonCard
                     title={project.title}
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
                     links={project.links}
-                  />
+                  /> */}
                 </BlurFade>
               ))}
             </ul>
