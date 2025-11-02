@@ -156,7 +156,7 @@ export default function Page() {
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              {/* <div className="space-y-2">
+              <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Hackathons
                 </div>
@@ -171,24 +171,24 @@ export default function Page() {
                   brought to life by a group of motivated and passionate
                   individuals.
                 </p>
-              </div> */}
+              </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
-                  key={project.title + project.dates}
+                  key={project.title}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  {/* <HackathonCard
+                  <HackathonCard
                     title={project.title}
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
                     links={project.links}
-                  /> */}
+                  />
                 </BlurFade>
               ))}
             </ul>
