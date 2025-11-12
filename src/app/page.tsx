@@ -314,6 +314,50 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
+      <section id="resume" className="py-12">
+  <BlurFade delay={BLUR_FADE_DELAY * 15}>
+    <div className="flex flex-col items-center justify-center space-y-6 text-center">
+      <div className="space-y-3">
+        <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+          Resume
+        </div>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          Download My Resume
+        </h2>
+        <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed mx-auto">
+          Want a quick overview of my professional journey and skills? You can
+          download my latest resume here.
+        </p>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <Link
+          href="https://github.com/sohilsharma0910/latest_resume/raw/c583cc359901bd77db826213a4a4c12a82a7bb47/Sohil_Sharma_Resume_Latest.pdf" // 🔗 replace this with your actual resume link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-2xl border border-foreground bg-foreground text-background px-6 py-3 font-medium shadow-lg transition hover:scale-105 hover:bg-foreground/90"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="mr-2 h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+          Download Resume
+        </Link>
+      </div>
+    </div>
+  </BlurFade>
+</section>
+
        <ContactSection />
     </main>
   );
